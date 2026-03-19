@@ -43,9 +43,12 @@ const About = () => (
           </div>
           <div>
             <h3 className="font-display text-xl font-bold mb-2">M. Machesa</h3>
-            <p className="text-gold text-sm font-medium mb-3">Founder & Director</p>
+            <p className="text-gold text-sm font-medium mb-3">Founder & CEO</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              A visionary leader in data science and governance, M. Machesa founded DK Africa Trade Group with a singular mission: advancing transparency and financial resilience across the African continent through intelligent technology. As a tech-forward social enterprise, DK Africa is dedicated to digital inclusion, turning cutting-edge tools into instruments for social equity.
+            </p>
             <p className="text-muted-foreground leading-relaxed">
-              A visionary leader in data science and governance, M. Machesa founded DK Africa Trade Group with the mission of advancing transparency and financial resilience across the African continent through intelligent technology solutions.
+              Drawing on years of high-level experience at Africa's leading IT titans, M. Machesa blends master-level expertise in Artificial Intelligence and systems scaling with a profound commitment to rural development. His journey, stretching from his roots in the Drakensberg to the global frontier of AI, informs his belief that technology must serve as the heartbeat of African progress.
             </p>
           </div>
         </motion.div>
