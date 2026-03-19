@@ -61,7 +61,7 @@ const About = () => (
         <h2 className="font-display text-3xl font-bold text-center mb-12">News & Updates</h2>
         <div className="space-y-6">
           {[
-            { date: "March 2026", title: "DK Africa Launches FSPRO LITE Platform", desc: "Our new cloud-enabled funeral management platform is now available for early adopters across Southern Africa." },
+            { date: "October 2025", title: "DK Africa Launches FSPRO LITE Platform", desc: "Our new cloud-enabled funeral management platform is now available for early adopters across Southern Africa." },
             { date: "February 2026", title: "SentraAI Partnership Announcement", desc: "DK Africa partners with leading enterprises to deploy multilingual conversational AI solutions." },
             { date: "January 2026", title: "ESG Compliance Workshop Series", desc: "Upcoming workshops on ESG compliance for African businesses — registration now open." },
           ].map((item, i) => (
