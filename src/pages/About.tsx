@@ -42,10 +42,10 @@ const About = () => (
             <User className="w-14 h-14 text-gold" />
           </div>
           <div>
-            <h3 className="font-display text-xl font-bold mb-2">Sechaba</h3>
+            <h3 className="font-display text-xl font-bold mb-2">M. Machesa</h3>
             <p className="text-gold text-sm font-medium mb-3">Founder & Director</p>
             <p className="text-muted-foreground leading-relaxed">
-              Sechaba is the Founder of DK Africa Trade Group, a tech-forward social enterprise dedicated to digital inclusion. Drawing on years of experience at Africa's leading IT titans, Sechaba blends expertise in Artificial Intelligence and systems scaling with a deep commitment to rural development. From his roots in the Drakensberg to the cutting edge of AI, he is on a mission to ensure that technology serves as a heartbeat for African progress and a portal for its youth.
+              A visionary leader in data science and governance, M. Machesa founded DK Africa Trade Group with the mission of advancing transparency and financial resilience across the African continent through intelligent technology solutions.
             </p>
           </div>
         </motion.div>
