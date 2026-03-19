@@ -62,8 +62,8 @@ const About = () => (
         <div className="space-y-6">
           {[
             { date: "October 2025", title: "DK Africa Launches FSPRO LITE Platform", desc: "Our new cloud-enabled funeral management platform is now available for early adopters across Southern Africa." },
-            { date: "November 2025", title: "Pemit Hub Partnership Announcement", desc: "DK Africa partners with leading enterprises to deploy multilingual conversational AI solutions." },
-            { date: "January 2026", title: "ESG Compliance Workshop Series", desc: "Upcoming workshops on ESG compliance for African businesses — registration now open." },
+            { date: "November 2025", title: "Pemit Hub Partnership Announcement", desc: "DK Africa partners with leading enterprises to deploy Permit hub." },
+            { date: "January 2026", title: "DK Africa Launches SentraAI ", desc: "Empowering businesses with intelligent AI solutions designed to simplify operations and drive growth." },
           ].map((item, i) => (
             <motion.div key={i} className="bg-card border border-border rounded-xl p-8 hover:border-gold/40 transition-colors" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
               <span className="text-gold text-sm font-medium">{item.date}</span>
