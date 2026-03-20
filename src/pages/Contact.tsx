@@ -32,8 +32,9 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                  <a href="mailto:dkafrica24@gmail.com" className="hover:text-gold transition-colors">
-</a>
+                  <a href="mailto:info@dkafricaholdings.co.za" className="hover:text-gold transition-colors">
+                    info@dkafricaholdings.co.za
+                  </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-gold flex-shrink-0" />
