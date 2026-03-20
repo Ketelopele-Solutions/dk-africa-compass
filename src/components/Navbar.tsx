@@ -27,13 +27,15 @@ const Navbar = () => {
           <Link to="/about" className={`text-sm font-medium transition-colors ${isActive("/about") ? "text-gold" : "text-primary-foreground/80 hover:text-gold"}`}>About Us</Link>
           
           <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-            <button className={`text-sm font-medium transition-colors flex items-center gap-1 ${location.pathname.startsWith("/services") ? "text-gold" : "text-primary-foreground/80 hover:text-gold"}`}>
+            <button className={`text-sm font-medium transition-colors flex items-center gap-1 py-2 ${location.pathname.startsWith("/services") ? "text-gold" : "text-primary-foreground/80 hover:text-gold"}`}>
               Services <ChevronDown className="w-4 h-4" />
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-56 bg-primary border border-gold/20 rounded-lg shadow-2xl overflow-hidden">
-                <Link to="/services/fspro-lite" className="block px-5 py-3 text-sm text-primary-foreground/80 hover:text-gold hover:bg-dark-green-deep transition-colors" onClick={() => setServicesOpen(false)}>FSPRO LITE</Link>
-                <Link to="/services/sentrai" className="block px-5 py-3 text-sm text-primary-foreground/80 hover:text-gold hover:bg-dark-green-deep transition-colors" onClick={() => setServicesOpen(false)}>SentraAI</Link>
+              <div className="absolute top-full left-0 pt-2 w-56">
+                <div className="bg-primary border border-gold/20 rounded-lg shadow-2xl overflow-hidden">
+                  <Link to="/services/fspro-lite" className="block px-5 py-3 text-sm text-primary-foreground/80 hover:text-gold hover:bg-dark-green-deep transition-colors" onClick={() => setServicesOpen(false)}>FSPRO LITE</Link>
+                  <Link to="/services/sentrai" className="block px-5 py-3 text-sm text-primary-foreground/80 hover:text-gold hover:bg-dark-green-deep transition-colors" onClick={() => setServicesOpen(false)}>SentraAI</Link>
+                </div>
               </div>
             )}
           </div>
