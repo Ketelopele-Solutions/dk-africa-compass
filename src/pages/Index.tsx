@@ -8,7 +8,7 @@ const coreAreas = [
   { icon: Database, title: "Information Systems Audit & IT Governance", desc: "Ensuring transparency and accountability in information systems." },
   { icon: BarChart3, title: "IT Service Delivery Management", desc: "Optimizing technology service delivery for operational excellence." },
   { icon: Brain, title: "AI & Data Science Innovation", desc: "Harnessing AI to unlock actionable insights from complex datasets." },
-  { icon: TrendingUp, title: "Automated Trading Algorithms", desc: "Building intelligent algorithmic trading solutions for financial markets." },
+  { icon: TrendingUp, title: "Automated Referral Algorithms", desc: "Building intelligent algorithmic trading solutions for financial markets." },
 ];
 
 const fadeIn = {
