@@ -65,8 +65,11 @@ const FSProLite = () => (
     <section className="section-padding bg-background">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-display text-3xl font-bold mb-8">See FSPRO LITE in Action</h2>
-        <div className="aspect-video bg-primary rounded-xl flex items-center justify-center border border-gold/20">
-          <p className="text-primary-foreground/50 text-lg">Demo Video Coming Soon</p>
+        <div className="aspect-video bg-primary rounded-xl overflow-hidden border border-gold/20">
+          <video className="w-full h-full object-cover" controls preload="metadata">
+            <source src="/videos/fspro-lite-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
