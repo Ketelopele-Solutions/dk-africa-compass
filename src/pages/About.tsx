@@ -55,6 +55,82 @@ const About = () => (
       </div>
     </section>
 
+    {/* Meet Our Team - Organogram */}
+    <section className="section-padding bg-background">
+      <div className="max-w-5xl mx-auto">
+        <motion.h2
+          className="font-display text-3xl font-bold text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          Meet Our Team
+        </motion.h2>
+
+        {/* CEO at top */}
+        <motion.div
+          className="flex flex-col items-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-primary border-2 border-gold rounded-xl px-8 py-5 text-center shadow-lg">
+            <div className="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-3">
+              <User className="w-7 h-7 text-gold" />
+            </div>
+            <h3 className="font-display text-lg font-bold text-primary-foreground">M. Machesa</h3>
+            <p className="text-gold text-xs font-medium mt-1">Founder & CEO</p>
+          </div>
+
+          {/* Vertical connector */}
+          <div className="w-px h-10 bg-border" />
+
+          {/* Horizontal connector bar */}
+          <div className="hidden md:block w-[85%] h-px bg-border relative">
+            {/* 6 vertical drops */}
+            {[0, 1, 2, 3, 4, 5].map((i) => (
+              <div
+                key={i}
+                className="absolute top-0 w-px h-10 bg-border"
+                style={{ left: `${(i / 5) * 100}%` }}
+              />
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Team members grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-10 md:mt-10">
+          {[
+            { name: "Leiketseng Moloi", role: "Account Manager", initials: "LM" },
+            { name: "Evidence Mabunda", role: "Scrum Master", initials: "EM" },
+            { name: "Rachel Madzunya", role: "Business Dev Analyst", initials: "RM" },
+            { name: "Nosibabalo Mtabele", role: "Front-End Developer", initials: "NM" },
+            { name: "Issac Molefi", role: "Quantitative Analyst", initials: "IM" },
+            { name: "Dorothy Kobe", role: "Office Administrator", initials: "DK" },
+          ].map((member, i) => (
+            <motion.div
+              key={member.name}
+              className="flex flex-col items-center text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+            >
+              {/* Vertical connector on mobile */}
+              <div className="md:hidden w-px h-6 bg-border mb-2" />
+              <div className="bg-card border border-border rounded-xl p-5 w-full hover:border-gold/40 transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 group-hover:bg-gold/20 transition-colors">
+                  <span className="text-gold font-display text-sm font-bold">{member.initials}</span>
+                </div>
+                <h4 className="font-display text-sm font-semibold leading-tight">{member.name}</h4>
+                <p className="text-muted-foreground text-xs mt-1.5">{member.role}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* News */}
     <section className="section-padding bg-background">
       <div className="max-w-4xl mx-auto">
