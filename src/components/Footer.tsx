@@ -20,8 +20,8 @@ const Footer = () =>
       </div>
       <div>
         <h4 className="font-display text-sm font-semibold text-gold mb-4 uppercase tracking-wider">Connect</h4>
-        <p className="text-primary-foreground/60 text-sm mb-4">info@dkafricaholdings.co.za
-WhatsApp: 062 992 0616
+        <p className="text-primary-foreground/60 text-sm mb-4">info@dkafricaholdings.co.za WhatsApp: 062 992 0616
+
 
 
         <br />WhatsApp: 062 992 0616</p>
@@ -32,6 +32,6 @@ WhatsApp: 062 992 0616
       </div>
     </div>
     <div className="border-t border-gold/10 py-6 text-center text-primary-foreground/40 text-xs">
-      © 2024 DK Africa Trade Group (PTY) LTD. All rights reserved.
+      © {new Date().getFullYear()} DK Africa Trade Group (PTY) LTD. All rights reserved.
     </div>
   </footer>;export default Footer;
