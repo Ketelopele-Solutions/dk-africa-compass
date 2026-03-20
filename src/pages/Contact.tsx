@@ -28,11 +28,12 @@ const Contact = () => {
               <div className="space-y-4 text-muted-foreground">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                  <p>DK Africa Trade Group (PTY) LTD<br/>Boundary Road, St Andrews<br/>Jackal Creek Golf Estate<br/>Roodepoort, 2169<br/>South Africa</p>
+                  <p>DK Africa Trade Group (PTY) LTD<br />Boundary Road, St Andrews<br />Jackal Creek Golf Estate<br />Roodepoort, 2169<br />South Africa</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                  <a href="mailto:dkafrica24@gmail.com" className="hover:text-gold transition-colors">dkafrica24@gmail.com</a>
+                  <a href="mailto:dkafrica24@gmail.com" className="hover:text-gold transition-colors">
+</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-gold flex-shrink-0" />
@@ -55,22 +56,21 @@ const Contact = () => {
             <h2 className="font-display text-2xl font-bold">Send a Message</h2>
             <div>
               <label className="block text-sm font-medium mb-2">Name</label>
-              <input type="text" required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50" />
+              <input type="text" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50" />
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Email</label>
-              <input type="email" required value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50" />
+              <input type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50" />
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Message</label>
-              <textarea required rows={5} value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 resize-none" />
+              <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 resize-none" />
             </div>
             <button type="submit" className="w-full gold-gradient text-accent-foreground font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">Send Message</button>
           </motion.form>
         </div>
       </section>
-    </div>
-  );
+    </div>);
 };
 
 export default Contact;
