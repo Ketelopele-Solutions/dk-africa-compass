@@ -15,7 +15,7 @@ const challenges = [
   "Manual record keeping",
   "Payment tracking inefficiencies",
   "Fraud and data inconsistencies",
-  "Poor member communication",
+  "Poor audit compliance",
 ];
 
 const packages = [
