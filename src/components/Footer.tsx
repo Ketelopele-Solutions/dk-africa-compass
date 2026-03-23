@@ -32,6 +32,6 @@ const Footer = () =>
       </div>
     </div>
     <div className="border-t border-gold/10 py-6 text-center text-primary-foreground/40 text-xs">
-      © {new Date().getFullYear()} DK Africa Trade Group (PTY) LTD. All rights reserved.
+      © 2024 DK Africa Trade Group (PTY) LTD. All rights reserved.
     </div>
   </footer>;export default Footer;
