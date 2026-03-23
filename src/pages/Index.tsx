@@ -32,7 +32,7 @@ const Index = () => (
         </motion.p>
         <motion.div className="flex flex-wrap justify-center gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}>
           <Link to="/contact" className="gold-gradient text-accent-foreground font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity">Request Consultation</Link>
-          <a href="#" className="border border-gold/40 text-gold font-semibold px-8 py-3 rounded-lg hover:bg-gold/10 transition-colors">Download Company Profile</a>
+          
           <Link to="/contact" className="border border-primary-foreground/30 text-primary-foreground font-semibold px-8 py-3 rounded-lg hover:bg-primary-foreground/10 transition-colors">Contact Us</Link>
         </motion.div>
       </div>
