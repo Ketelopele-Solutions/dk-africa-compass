@@ -59,8 +59,8 @@ const packages = [
   },
   {
     name: "Premium",
-    price: "R1 000",
-    period: "/month",
+    price: "From R1 000",
+    period: "/monthly",
     target: "For larger funeral businesses",
     icon: Sparkles,
     featured: false,
