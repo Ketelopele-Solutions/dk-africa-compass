@@ -20,11 +20,7 @@ const Footer = () =>
       </div>
       <div>
         <h4 className="font-display text-sm font-semibold text-gold mb-4 uppercase tracking-wider">Connect</h4>
-        <p className="text-primary-foreground/60 text-sm mb-4">info@dkafricaholdings.co.za WhatsApp: 062 992 0616
-
-
-
-        <br />WhatsApp: 062 992 0616</p>
+        <p className="text-primary-foreground/60 text-sm mb-4">info@dkafricaholdings.co.za<br />WhatsApp: 062 992 0616</p>
         <div className="flex gap-4">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-gold transition-colors"><Facebook className="w-5 h-5" /></a>
           <a href="https://www.linkedin.com/in/dk-africa-87401535b" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-gold transition-colors"><Linkedin className="w-5 h-5" /></a>
