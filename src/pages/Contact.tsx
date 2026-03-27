@@ -3,11 +3,36 @@ import { MapPin, Mail, Phone, Facebook, Linkedin } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", cellphone: "", message: "" });
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:dkafrica24@gmail.com?subject=Enquiry from ${form.name}&body=${form.message}%0A%0AFrom: ${form.email}`;
+    setSubmitStatus(null);
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/dkafrica25@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `DK Africa Website - Enquiry from ${form.name}`,
+          _replyto: form.email,
+          _template: "box",
+          message: `Sent from: DK Africa Trade Group website\nName: ${form.name}\nEmail: ${form.email}\nCellphone: ${form.cellphone}\n\nMessage:\n${form.message}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setForm({ name: "", email: "", cellphone: "", message: "" });
+      setSubmitStatus("success");
+    } catch {
+      setSubmitStatus("error");
+    }
   };
 
   return (
@@ -64,9 +89,19 @@ const Contact = () => {
               <input type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50" />
             </div>
             <div>
+              <label className="block text-sm font-medium mb-2">Cellphone Number</label>
+              <input type="tel" required value={form.cellphone} onChange={(e) => setForm({ ...form, cellphone: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50" />
+            </div>
+            <div>
               <label className="block text-sm font-medium mb-2">Message</label>
               <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 resize-none" />
             </div>
+            {submitStatus === "success" && (
+              <p className="text-sm text-green-600">Message sent successfully.</p>
+            )}
+            {submitStatus === "error" && (
+              <p className="text-sm text-red-600">Could not send message. Please try again.</p>
+            )}
             <button type="submit" className="w-full gold-gradient text-accent-foreground font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">Send Message</button>
           </motion.form>
         </div>
